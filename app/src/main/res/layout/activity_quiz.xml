@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/second_background"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/sorular"
+        android:layout_width="301dp"
+        android:layout_height="166dp"
+        android:background="@drawable/quiz_bg"
+        android:gravity="center"
+        android:text="2017 de Google Android
+Hangi Dile geçmiştir?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"></TextView>
+
+
+    <TextView
+        android:id="@+id/zaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zaman:10"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sorular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cevapAbutton"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:background="@drawable/asymmetric_button"
+        android:onClick="a_button"
+        android:text="Java"
+        app:layout_constraintBottom_toTopOf="@+id/cevapBbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sorular"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cevapBbutton"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:background="@drawable/asymmetric_button"
+        android:onClick="b_button"
+        android:text="Go"
+        app:layout_constraintBottom_toTopOf="@+id/cevapCbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cevapAbutton">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cevapCbutton"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/asymmetric_button"
+        android:onClick="c_button"
+        android:text="Kotlin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sorular"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
