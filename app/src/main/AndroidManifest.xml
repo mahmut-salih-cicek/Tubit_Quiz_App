@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz_app_example_1">
         <activity
-            android:name=".QuizActivity"
+            android:name=".View.QuizActivity"
             android:exported="false" />
         <activity
-            android:name=".UserActivity"
+            android:name=".View.UserActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

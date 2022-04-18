@@ -1,14 +1,12 @@
-package com.xmod.quiz_app_example_1
+package com.xmod.quiz_app_example_1.View
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import com.xmod.quiz_app_example_1.R
 
 class MainActivity : AppCompatActivity() {
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,14 +17,13 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-
-        var countDownTimer = object :  CountDownTimer(1500,1000){
+        var countDownTimer = object : CountDownTimer(1500, 1000) {
             override fun onTick(millisUntilFinished: Long) {
 
             }
 
             override fun onFinish() {
-                var intent = Intent(this@MainActivity,UserActivity::class.java)
+                var intent = Intent(this@MainActivity, UserActivity::class.java)
                 startActivity(intent)
                 finish()
             }
